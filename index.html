@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contentHeader">
+            <img class="logoFooter" src="./images/logo.png" alt="logoFooter">
+            <nav>
+                <ul class="menuLista">
+                    <li class="menu"><a href="#carreira">Carreira</a></li>
+                    <li class="menu"><a href="#habilidades">Skills</a></li>
+                    <li class="menu"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="profileInfo">
+            <img class="profileImage" src="./images/profile.png" alt="profileImage">
+            <div class="user_info">
+                <h1 class="titleProfile">Lucas Teixeira Barcelos</h1>
+                <p>Sou desenvolvedor Mobile com foco na plataforma iOS e atualmente estou trabalhando no projeto das Lojas Renner, mas já atuei em diversos projetos, como por exemplo:</p>
+                <p><br>- Itaú<br>- Santader <br>- Banco Original <br>- Banco ABC Santander <br></p>
+                <p><br>Amo o que faço e sou apaixonado por tecnologia, tenho como hobbie ver filmes e o mundo da impressão 3D.</p>
+            </div>
+        </div>
+    </main>
+    
+    <section id="carreira">
+        <p id="tituloCarreira">Carreira</p>
+        <div class="tablinkMain">
+            <button class="tablink" onclick="openPage('Resumo', this, '#FFC107')" id="defaultOpen">Resumo</button>
+            <button class="tablink" onclick="openPage('Experiência', this, '#FFC107')">Experiência</button>
+            <button class="tablink" onclick="openPage('Escolaridade', this, '#FFC107')">Escolaridade</button>
+        </div>
+        <div id="Resumo" class="tabcontent">
+            <p>Apaixonado por tecnologia e atuando como desenvolvedor por pouco mais de 3 anos, amo assistir filmes, viajar, aprender coisas novas e imprimir coisas bobas com a minha impressora 3D. </p>
+        </div>
+        
+        <div id="Experiência" class="tabcontent">
+
+            <p><br>DBC Company<br>09/2019 – atualmente</p>
+            <p>Desenvolvimento de Apps para a plataforma iOS com Swift 5.1. </p>
+            
+            <p><br>Zup Innovation<br>11/2018 – 07/2019</p>
+            <p>Desenvolvimento de Apps para a plataforma iOS com Swift 4.2. <br>- Banco ABC</p>
+            
+            <p><br>GFT<br>11/2017 – 11/2018</p>
+            <p>Desenvolvimento de Apps para a plataforma iOS, com Swift e Objc. <br>- Itaú Latam (App de cartões de crédito para Argentina, Uruguai e Paraguai) <br>- Banco Original (Mobile Banking e Mobile Token)</p>
+            
+            <p><br>Poggers<br>03/2017 – 11/2017</p>
+            <p>Desenvolvimento de Apps para a plataforma iOS com Swift.</p>
+           
+            <p><br>Grupo Fleury<br>08/2016 – 03/2017</p>
+            <p>Gerenciamento de projetos na área de Tecnologia da Informação, realizando levantamento de requisitos, criação de plano financeiro, contato com fornecedores e cronograma.</p>
+           
+            <p><br>Spectrum Brands - Rayovac<br>10/2014 – 07/2016</p>
+            <p>Atuando com a área de Infraestrutura e Sistemas, realizei a manutenção (troca diária) de fitas de backup no robô de Backup e manutenção de cadastro de usuários no AD.</p>
+            
+            <p><br>Codeminer42 <br>02/2014 – 04/2014</p>
+            <p>Estágio em Desenvolvimento Web, utilizando Ruby on Rails, HTML5, CSS3, JavaScript.</p>
+
+            <p><br>Bobimaq Automação Comercial LTDA <br>05/2012 – 12/2013</p>
+            <p>Atendimento à clientes via acesso remoto, onde é feito instalações, atualizações e configurações de programas fiscais. Realizo orçamentos, manutenções preventivas e corretivas em equipamentos de informática e configurações de redes.</p>
+                           
+        </div>
+        
+        <div id="Escolaridade" class="tabcontent">
+            <h1>FIAP</h1>
+            <p>Mobile Development - Cursando.</p>
+            <p>Engenharia de Computação - Concluído em 2017.</p>
+        </div>
+    </section>
+    
+    <section id="habilidades">
+        <div class="skillsInfo">
+            <div class="skillText">
+                <p>Xcode, Swift +2.3, Objective-C, CocoaPods (Alamofire...), GIT (GitLab, Bitbucket & Sourcetree), Jira, Postman, SoapUI, JSON, Push Notification (OneSignal + OneSignal Provisionator), Xibs, Storyboard (Constraints & Auto Layout), Publicação de Apps na loja, CoreData, Realm, MVC (estudos de MVVM, MVP e VIPER).</p>
+            </div>
+            <div class="barras">
+                
+                <p>Swift</p>
+                <div class="barraHabilidades">
+                    <div class="barraSwift">
+                        <p class="porcentagem">90%</p>
+                    </div>
+                </div>
+                
+                <p>Objective-C</p>
+                <div class="barraHabilidades">
+                    <div class="barraObjc">
+                        <p class="porcentagem">60%</p>
+                    </div>
+                </div>
+                
+                <p>Kotlin</p>
+                <div class="barraHabilidades">
+                    <div class="barraKotlin">
+                        <p class="porcentagem">30%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <form class="contentForm">
+            <h1 class="contatoFormulario">Contato</h1>
+            <div class="divFormulario">
+                <div class="formularioInfos">
+                    <label for="nome">Nome:</label>
+                    <input class="nome" id="nome" type="text" name="nome" />
+                    <label for="assunto">Assunto:</label>
+                    <input class="assunto" id="assunto" type="text" name="assunto" />
+                    <label for="email">E-mail:</label>
+                    <input class="email" id="email" type="text" name="email" />
+                </div>
+                <div class="formularioMessage">
+                    <label for="message">Mensagem:</label>
+                    <textarea class="message" id="message" name="message" rows="10"></textarea>
+                </div>
+                <button class="botaoEnviar" type="button" onclick="enviar()">Enviar</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="contentFooter">
+            <p class="copyright">Copyright © 2019. Todos os direitos reservados.</p>
+            <div class="linkButtons">
+                <a target="_blank" href="https://www.instagram.com/ltbarcelos/" class="instagram_button">
+                    <img class="imageButton" src="./images/instagram.png" alt="insta_image">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/lucas-teixeira-barcelos-351b654a/" class="linkedin_button">
+                    <img class="imageButton" src="./images/linkedin.png" alt="linkedin_image">
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511994787489&text=Gostei%20do%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA..." class="whats_button">
+                    <img class="imageButton" src="./images/whats.png" alt="whats_image">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Ir para cima</button>
+</body>
+
+<script src="./js/load.js"></script>
+</html>
